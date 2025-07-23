@@ -1,18 +1,13 @@
-# Online Restaurant Ordering System
-
-## Project Overview
-This project is for ITSC 3155 - Group Project Part 1. The system allows restaurant customers to place orders online via an intuitive interface, supporting both guests and registered users. It includes role-specific dashboards for staff, order tracking, and analytics features to streamline operations.
-
-## Features
-- Guest checkout (no registration)
-- Menu creation and food categorization
-- Takeout and delivery options
-- Multi-method payment support
-- Order tracking by order number
-- Ratings and reviews
-- Promo code support
-- Role-based dashboards (admin, chef, delivery, etc.)
-- Analytics and reporting
-- Documentation and training features
-
-## Repository Structure
+### Installing necessary packages:  
+* `pip install fastapi`
+* `pip install "uvicorn[standard]"`  
+* `pip install sqlalchemy`  
+* `pip install pymysql`
+* `pip install pytest`
+* `pip install pytest-mock`
+* `pip install httpx`
+* `pip install cryptography`
+### Run the server:
+`uvicorn api.main:app --reload`
+### Test API by built-in docs:
+[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
