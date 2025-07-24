@@ -6,3 +6,7 @@ pytest
 pytest-mock
 httpx
 cryptography
+fastapi
+uvicorn
+sqlalchemy
+
