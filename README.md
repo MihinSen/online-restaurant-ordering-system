@@ -62,12 +62,14 @@ Copy
 Edit
 python -m venv env
 source env/bin/activate  # or .\env\Scripts\activate on Windows
+
 3. **Install dependencies**
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
+
 4. **Configure database**
 
 Create a database sandwich_maker_api in MySQL
@@ -80,6 +82,7 @@ bash
 Copy
 Edit
 uvicorn main:app --reload
+
 6. **Test API**
 Visit http://127.0.0.1:8000/docs to explore and test all endpoints.
 
