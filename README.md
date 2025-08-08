@@ -1,29 +1,87 @@
-### Installing necessary packages:  
-* `pip install fastapi`
-* `pip install "uvicorn[standard]"`  
-* `pip install sqlalchemy`  
-* `pip install pymysql`
-* `pip install pytest`
-* `pip install pytest-mock`
-* `pip install httpx`
-* `pip install cryptography`
-### Run the server:
-`uvicorn api.main:app --reload`
-### Test API by built-in docs:
-[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+# Online Restaurant Ordering System API
+
+## Overview
+This project is an **Online Restaurant Ordering System** built using FastAPI and MySQL. It allows users to view menu items, place orders, and track them. Admin and restaurant staff have additional capabilities to manage menu content and update orders.
+
+## Team
+**Team Name:** Funtime  
+**Date:** August 7th
+
 ---
 
-## Features Implemented
-- User Registration (Customer, Staff, Admin roles)
-- Menu Item Management
-- Place Orders
-- View Orders
+## Features
+- View full menu (sandwiches, recipes, resources)
+- Place new food orders
+- Track order status by ID
+- Admin CRUD for all menu tables
+- Fully RESTful API with FastAPI
+- Interactive API docs available at `/docs`
 
-## Project Structure
-app/
-├── main.py          # FastAPI app and endpoints
-├── models.py        # SQLAlchemy models (User, Order, MenuItem)
-├── schemas.py       # Pydantic schemas
-├── database.py      # DB connection + create tables
-├── config.py        # App config (optional)
-├── test_orders.py   # Sample test (pytest)
+---
+
+## Technologies Used
+- FastAPI
+- Python 3.11+
+- SQLAlchemy
+- Pydantic
+- MySQL
+- Uvicorn
+- Swagger UI (for interactive API documentation)
+
+---
+
+## Folder Structure
+.
+├── app/
+├── database/
+├── docs/
+│ ├── Updated_User_Manual.docx
+│ ├── Updated_Technical_Document.docx
+│ ├── Sprint_Backlog.docx
+│ ├── Product_Backlog.docx
+│ └── User_Stories.docx
+├── main.py
+├── requirements.txt
+
+yaml
+Copy
+Edit
+
+---
+
+## Setup Instructions
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/MihinSen/online-restaurant-ordering-system.git
+cd online-restaurant-ordering-system
+Create and activate a virtual environment
+
+bash
+Copy
+Edit
+python -m venv env
+source env/bin/activate  # or .\env\Scripts\activate on Windows
+Install dependencies
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Configure database
+
+Create a database sandwich_maker_api in MySQL
+
+Update credentials in config.py
+
+Run the API
+
+bash
+Copy
+Edit
+uvicorn main:app --reload
+Test API
+Visit http://127.0.0.1:8000/docs to explore and test all endpoints.
+
+Contributors
+Mihin (Solo Developer)
