@@ -55,32 +55,32 @@ Edit
 ```bash
 git clone https://github.com/MihinSen/online-restaurant-ordering-system.git
 cd online-restaurant-ordering-system
-Create and activate a virtual environment
+2. **Create and activate a virtual environment**
 
 bash
 Copy
 Edit
 python -m venv env
 source env/bin/activate  # or .\env\Scripts\activate on Windows
-Install dependencies
+3. **Install dependencies**
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
-Configure database
+4. **Configure database**
 
 Create a database sandwich_maker_api in MySQL
 
 Update credentials in config.py
 
-Run the API
+5. **Run the API**
 
 bash
 Copy
 Edit
 uvicorn main:app --reload
-Test API
+6. **Test API**
 Visit http://127.0.0.1:8000/docs to explore and test all endpoints.
 
 Contributors
